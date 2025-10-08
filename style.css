@@ -189,18 +189,14 @@ body {
   .container {
     flex-direction: column-reverse;
     border-radius: 0px;
-    flex-wrap: wrap;
   }
-
 
   .right {
     padding: 0px;
-    flex: 30%;
   }
 
   .right img {
     width: 100%;
-    height: auto;
   } 
 
   .left {
@@ -208,7 +204,6 @@ body {
     padding-right: 35px;
     padding-top: 20px;
     padding-bottom: 20px;
-    flex: 70%;
   }
 
   .left h1 {
