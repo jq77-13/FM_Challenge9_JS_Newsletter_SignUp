@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-
 </head>
 <body>
   <!-- Sign-up form start --> 
@@ -22,7 +21,11 @@
         <li>And much more!</li>
       </ul>
       <form>
-        <label for="email">Email address</label>
+        <div class="label-container">
+          <label for="email">Email address</label>
+          <label id="email-error">Valid mail required</label> 
+        </div>
+
         <input type="email" id="email" name="email" placeholder="email@company.com" required>
       </form>
       <button type="submit" id="submitbtn">Subscribe to monthly newsletter</button>

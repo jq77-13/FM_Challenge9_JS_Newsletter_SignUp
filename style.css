@@ -3,6 +3,7 @@
 :root {
   --Green500: hsl(158, 36%, 37%);
   --Red: hsl(4, 100%, 67%);
+  --RedLight: hsla(4, 100%, 90%, 0.6);
   --Blue800: hsl(234, 29%, 20%);
   --Blue700: hsl(235, 18%, 26%);
   --Grey: hsl(0, 0%,58%);
@@ -81,8 +82,6 @@ body {
   
 .left label {
   display: block; /* ensure label sits above the input */
-  font-weight: 900;
-  font-size: 0.9rem;
   color: var(--Blue700);
   margin-bottom: 6px; /* larger gap between label and input */
 }
@@ -111,6 +110,18 @@ body {
 
 .left button:active {
   background-color: var(--Red);
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+#email-error {
+  color: var(--Red);
+  display: none; 
 }
 
 .right {
@@ -165,4 +176,9 @@ body {
 
 .icon-container button:active {
   background-color: var(--Red);
+}
+
+.input-error {
+  border: 1px solid var(--Red);
+  background-color: var(--RedLight);
 }
