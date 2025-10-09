@@ -14,6 +14,7 @@ document.getElementById('submitbtn').addEventListener('click', function() {
   } else {
     setDefaultStyles();
     switchLayout(false);
+    document.getElementById('display-email').innerText = emailInput.value;
   }
 });
 
